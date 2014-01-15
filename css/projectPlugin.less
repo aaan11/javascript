@@ -1,0 +1,50 @@
+@thumb-width: 90px;
+@thumb-height: 57px;
+
+.thumbs {
+	overflow: auto;
+	margin-top: 15px;
+}
+
+.thumbs div {
+	display: inline-block;
+	width: @thumb-width;
+	height: @thumb-height;
+	text-align: center;
+	float:left;
+	margin: 5px;
+}
+
+.thumbs img {
+	max-width: @thumb-width;
+	max-height: @thumb-height;
+	opacity: 0.5;
+}
+
+.thumbs img:hover {
+	opacity: 1;
+}
+
+.slideShow {
+	background: white;
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 998;
+	background: #000000 no-repeat scroll center center;
+}
+
+#lightbox {
+	position: fixed;
+	z-index: 999;
+}
+
+.toggleSlide {
+	background: black;
+	color: white;
+}
